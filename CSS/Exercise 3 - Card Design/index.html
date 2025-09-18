@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+
+    <style>
+    
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: black;
+            border: 1px solid #000;
+            border-radius: 10px;
+            width: 95vw;
+            max-width: 400px;
+            height: 620px;
+            
+            /*position: absolute;*/
+            z-index: 1;
+        }
+        .card img{
+            /*position: relative;*/
+
+            /*position: absolute;*/
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+            width: 95%;
+            height: 300px;
+            object-fit: cover;
+            /*display: flex;*/
+            z-index: 2;
+            border-radius: 5%;
+            overflow: hidden;
+
+            }
+
+            .tags {
+            margin-bottom: 10px; /* space below tags */
+            width: 80vw;
+            }
+
+            .tag {
+                display: inline-block;
+                padding: 5px 12px;
+                margin-right: 10px;
+                font-size: 0.85rem;
+                color: white;
+                border: 1px solid #54585c; 
+                border-radius: 15px;
+                background-color: transparent;
+                font-family: 'Nunito', sans-serif;
+            }
+            .content{
+                background-color: transparent;
+                z-index: 2;
+                top: 330px;
+                padding: 20px;
+                overflow: hidden;
+                width: 80vw;
+                max-width: 350px;
+                height: 190px;
+                position: absolute;
+        
+            }
+            .content h2{
+                font-family: Nunito;
+                color: rgb(255, 255, 255);
+            }
+
+            .content p{
+              
+                font-family: poppins;
+                color: rgb(212, 212, 212);
+            }
+
+            .btn{
+               
+                background-color: rgb(154, 198, 248);
+                color: rgb(6, 76, 141);
+                border: 1px solid rgb(17, 131, 207);
+                border-radius: 20px;
+                padding: 10px;
+                width: 40%;
+                font-family: Nunito;
+                font-weight: 800;
+            }
+            .btn:hover{
+                background-color: rgb(28, 97, 201);
+                color: white;
+            }
+
+            .card-btn{
+                /*position: absolute;*/
+               text-align: center;
+               padding: 5px 20px 35px 20px;
+                
+            }
+        
+        
+
+    </style>
+</head>
+<body>
+    <!--Card.png is a file which contains a card image. write html and css code to design this card-->
+    <!-- <img src="card.png" alt=""> -->
+     <div class="card">
+        <div class="img">
+       <img src="img.jpg" alt="">
+        </div>
+
+    <div class="content">
+        <div class="tags">
+            <span class="tag">Nature</span>
+            <span class="tag">Lake</span>
+            </div>
+        <h2> Lago di Braies</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ut in nihil veniam velit quo corporis eum.
+        </p>
+        
+    </div>
+
+    <div class="card-btn">
+        <a href="www.google.com">
+        <button class="btn" > Read More</button>
+        </a>
+    </div>
+    </div>
+</body>
+</html>
