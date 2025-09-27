@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Exercise 5 - Layout Design</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        :root{
+            --primary-color: rgb(0, 0, 0);
+            --secondary-color: purple;
+            --side-color:rgb(49, 48, 48);
+            --primary-textcolor: white;
+            --secondary-textcolor: gray;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background-color: var(--primary-color);
+        }
+
+        .nav{
+            background-color: var(--secondary-color);
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            padding: 23px;
+            position:sticky;
+            top: 0;
+            z-index: 1000;
+            
+        }
+
+        ul li{
+
+            display: inline;
+            list-style: none;
+            align-items: center;
+            color: var(--primary-textcolor);
+            font-weight: 500;
+            padding: 2vw;
+            justify-content: space-between;
+        }
+
+        .logo{
+            display: inline;
+            align-items: center;
+            width: 2vw;
+        }
+
+        .slider{
+            background-color: rgb(54, 3, 3);
+            border: 2px solid white;
+            padding: 30px 10px;
+            /*display: flex;*/
+            margin: 0px 10px;
+            /*max-width: 90vw auto;*/
+            text-align: center;
+        }
+
+        .box{
+            border: 2px solid white;
+            width: 48%;
+            height: 70vh;
+            margin: 13px;
+            display: inline-block;
+        }
+
+        .box:nth-child(2){
+            background-color: rgb(40, 241, 164);
+        }
+
+          .box:nth-child(1){
+            background-color: rgb(8, 196, 196);
+        }
+
+        .icon{
+            position: fixed;
+            bottom: 23px;
+            right: 43px;
+            z-index: auto;
+        }
+
+        .main{
+            border: 1px solid white;
+            border-radius: 34px;
+            padding: 23px 12px 23px 12px;
+            margin: 44px;
+            
+        }
+
+        .main h2{
+            color: var(--primary-textcolor);
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .main p{
+            color: var(--secondary-textcolor);
+            text-align: center;
+            padding: 23px;
+            font-family: poppins;
+            font-size: 20px;
+        }
+
+        footer{
+            color: var(--primary-textcolor);
+            text-align: center;
+            padding: 32px;
+            background-color: var(--side-color);
+            border-top: 1px solid gray;
+            margin-top: 44px;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="logo.png" alt="logo" width="62px">
+        </div>
+        <ul>
+            <li <a href="Home"> Home </a></li>
+            <li <a href="Home"> About </a></li>
+            <li <a href="Home"> Projects </a></li>
+            <li <a href="Home"> Contact us </a></li>
+        </ul>
+    </nav>
+
+    <div class="slider">
+        
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="icon">
+        <img src="icon.png" alt="whatsapp-icon" width="62px">
+    </div>
+
+    <div class="main">
+        <h2> The practice of Website layout Design</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, delectus ipsam nulla doloribus maxime laboriosam natus necessitatibus facilis earum, delectus ipsam nulla doloribus maxime laboriosam natus necessitatibus facilis earum
+        </p>
+
+        
+    </div>
+
+    <footer>
+        @copyright 2025
+    </footer>
+    
+</body>
+</html>
